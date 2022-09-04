@@ -2,7 +2,7 @@
 Question: Write a C program to parse the given string using Recursive Descent Parser.
 
 Input: a+a*a
-OUTPUT BY AMIT:
+OUTPUT BY AMIT:E->TE'T->FT'F->aT'->^E'->+TE'T->FT'F->aT'->*FT'F->aT'->^E'->^string sucessfully parsed!
 
 Output: string parsed successfully!
 */
