@@ -4,6 +4,7 @@ Question: Write a C program to parse the given string using Recursive Descent Pa
 Note: Take len variable's value as 3 and increment i value (in both user defined function) according to the number of variables in the given production.
 
 Input: abbc
+OUTPUT BY AMIT: S->aBcB->bcString sucessfully parsed
 
 Output: $z +z*z$ shift->z$L +z*z$ Reduce by L->z$L+ z*z$ shift->+$L+z *z$ shift->z$L+L *z$ Reduce by L->z$L *z$ Reduce by L->L+L$L* z$ shift->*$L*z $ shift->z$L*L $ Reduce by L->z$L $ Reduce by L->L*L$L $ Accept
 */
