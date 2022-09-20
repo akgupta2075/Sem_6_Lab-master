@@ -64,11 +64,11 @@ int A()
         printf("A->a");
         i++;
     }
-    else
-    {
-        printf("A->^");
-        i++;
-    }
+//     else
+//     {
+//         printf("A->^");
+//         i++;
+//     }
     return 0;
 }
 
@@ -79,11 +79,11 @@ int B()
         printf("B->b");
         i++;
     }
-    else
-    {
-        printf("B->^");
-        i++;
-    }
+//     else
+//     {
+//         printf("B->^");
+//         i++;
+//     }
     return 0;
 }
 
@@ -94,10 +94,10 @@ int C()
         printf("C->c");
         i++;
     }
-    else
-    {
-        f = 1;
-    }
+//     else
+//     {
+//         f = 1;
+//     }
     return 0;
 }
 
@@ -108,11 +108,11 @@ int D()
         printf("D->d");
         i++;
     }
-    else
-    {
-        printf("D->^");
-        i++;
-    }
+//     else
+//     {
+//         printf("D->^");
+//         i++;
+//     }
     return 0;
 }
 
@@ -123,10 +123,10 @@ int E()
         printf("E->e");
         i++;
     }
-    else
-    {
-        printf("E->^");
-        i++;
-    }
+//     else
+//     {
+//         printf("E->^");
+//         i++;
+//     }
     return 0;
 }
