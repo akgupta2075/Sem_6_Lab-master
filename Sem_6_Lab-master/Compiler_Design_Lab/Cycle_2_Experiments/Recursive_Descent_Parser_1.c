@@ -1,8 +1,6 @@
 /*
 Question: Write a C program to parse the given string using Recursive Descent Parser.
-
 Input: x+x*x
-
 Output: E->TE'T->FT'F->xT'->^E'->+TE'T->FT'F->xT'->*FT'F->xT'->^E'->^string sucessfully parsed!
 */
 
@@ -72,16 +70,16 @@ int F()
         i++;
     }
 
-    else if (str[i] == '(')
-    {
-        printf("F->(E)");
-        i++;
-        E();
-        if (str[i] == ')')
-            i++;
-    }
-    else
-        f = 1;
+    // else if (str[i] == '(')
+    // {
+    //     printf("F->(E)");
+    //     i++;
+    //     E();
+    //     if (str[i] == ')')
+    //         i++;
+    // }
+    // else
+    //     f = 1;
     return 0;
 }
 
