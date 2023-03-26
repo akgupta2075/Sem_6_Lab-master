@@ -1,8 +1,6 @@
 /*
 Question: Write a C program to parse the given string using Operator Precedence Parser.
-
 Input: ->>><><><>>><<<-
-
 Output: Shift aReduceShift +Shift aReduceShift *Shift aReduceReduceReduceString is accepted
 */
 
@@ -10,14 +8,14 @@ Output: Shift aReduceShift +Shift aReduceShift *Shift aReduceReduceReduceString 
 #include <string.h>
 int main()
 {
-    char stack[20], opt[10][10];
+    char stack[20], arr[10][10];
     int i, j, k, n = 4, top = 0, col, row;
     char ter[] = {'a', '+', '*', '$'};
     for (i = 0; i < n; i++)
     {
         for (j = 0; j < n; j++)
         {
-            scanf("%c", &opt[i][j]);
+            scanf("%c", &arr[i][j]);
         }
     }
     stack[top] = '$';
@@ -37,16 +35,16 @@ int main()
             printf("String is accepted");
             break;
         }
-        else if ((opt[row][col] == '<') || (opt[row][col] == '='))
+        else if ((arr[row][col] == '<') || (arr[row][col] == '='))
         {
-            stack[++top] = opt[row][col];
+            stack[++top] = arr[row][col];
             stack[++top] = ip[i];
             printf("Shift %c", ip[i]);
             i++;
         }
         else
         {
-            if (opt[row][col] == '>')
+            if (arr[row][col] == '>')
             {
                 while (stack[top] != '<')
                     --top;
