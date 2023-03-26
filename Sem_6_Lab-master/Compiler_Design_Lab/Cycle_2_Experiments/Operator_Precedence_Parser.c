@@ -10,7 +10,7 @@ int main()
 {
     char stack[20], arr[10][10];
     int i, j, k, n = 4, top = 0, col, row;
-    char ter[] = {'a', '+', '*', '$'};
+    char temp[] = {'a', '+', '*', '$'};
     for (i = 0; i < n; i++)
     {
         for (j = 0; j < n; j++)
@@ -25,9 +25,9 @@ int main()
     {
         for (k = 0; k < n; k++)
         {
-            if (stack[top] == ter[k])
+            if (stack[top] == temp[k])
                 row = k;
-            if (ip[i] == ter[k])
+            if (ip[i] == temp[k])
                 col = k;
         }
         if ((stack[top] == '$') && (ip[i] == '$'))
